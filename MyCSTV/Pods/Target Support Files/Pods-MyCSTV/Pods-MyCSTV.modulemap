@@ -1,0 +1,6 @@
+framework module Pods_MyCSTV {
+  umbrella header "Pods-MyCSTV-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,1033 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01B1A20EE78DD176C49637F9 /* Pods_MyCSTVTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66E2BFD8FA12F59E489E6517 /* Pods_MyCSTVTests.framework */; };
+		19118B0D27F4F19D003EC325 /* OpponentClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19118B0C27F4F19D003EC325 /* OpponentClass.swift */; };
+		195DC11727FCFFAA005DD2EE /* DeatailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195DC11627FCFFAA005DD2EE /* DeatailCoordinator.swift */; };
+		19902A7027EE9941006DAA74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19902A6F27EE9941006DAA74 /* AppDelegate.swift */; };
+		19902A7227EE9941006DAA74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19902A7127EE9941006DAA74 /* SceneDelegate.swift */; };
+		19902A7927EE9941006DAA74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19902A7827EE9941006DAA74 /* Assets.xcassets */; };
+		19902A7C27EE9941006DAA74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19902A7A27EE9941006DAA74 /* LaunchScreen.storyboard */; };
+		19902A8727EE9941006DAA74 /* MyCSTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19902A8627EE9941006DAA74 /* MyCSTVTests.swift */; };
+		19902A9127EE9941006DAA74 /* MyCSTVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19902A9027EE9941006DAA74 /* MyCSTVUITests.swift */; };
+		19902A9327EE9941006DAA74 /* MyCSTVUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19902A9227EE9941006DAA74 /* MyCSTVUITestsLaunchTests.swift */; };
+		19C4928727F2927C0068C950 /* MatchesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C4928527F2927C0068C950 /* MatchesTableViewCell.swift */; };
+		19C4928827F2927C0068C950 /* MatchesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19C4928627F2927C0068C950 /* MatchesTableViewCell.xib */; };
+		19C4928A27F37DDF0068C950 /* MatchesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C4928927F37DDF0068C950 /* MatchesModel.swift */; };
+		19C4928E27F386B70068C950 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C4928D27F386B70068C950 /* AppCoordinator.swift */; };
+		19C4929127F39B510068C950 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C4928F27F39B500068C950 /* ViewController.swift */; };
+		19C4929227F39B510068C950 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19C4929027F39B510068C950 /* ViewController.xib */; };
+		19C4929427F403870068C950 /* MatchesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C4929327F403870068C950 /* MatchesCoordinator.swift */; };
+		19C4929627F406990068C950 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C4929527F406990068C950 /* Coordinator.swift */; };
+		19C492A727F412EC0068C950 /* MatchesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C492A627F412EC0068C950 /* MatchesViewModel.swift */; };
+		19C492B327F4DAC00068C950 /* OpponentsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C492B227F4DAC00068C950 /* OpponentsModel.swift */; };
+		19CAC42E27FFE89200BFE5E5 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CAC42D27FFE89200BFE5E5 /* AppColor.swift */; };
+		19CAC43027FFFC4400BFE5E5 /* DTOMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CAC42F27FFFC4400BFE5E5 /* DTOMapper.swift */; };
+		19CAEC3B27F63B2D001ED5B7 /* MathcsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CAEC3A27F63B2D001ED5B7 /* MathcsAPI.swift */; };
+		19D6B8E727FE34EF006F9A36 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19D6B8DA27FE34EE006F9A36 /* Roboto-Black.ttf */; };
+		19D6B8E827FE34EF006F9A36 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19D6B8DB27FE34EE006F9A36 /* Roboto-BlackItalic.ttf */; };
+		19D6B8E927FE34EF006F9A36 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19D6B8DC27FE34EE006F9A36 /* Roboto-BoldItalic.ttf */; };
+		19D6B8EA27FE34EF006F9A36 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19D6B8DD27FE34EE006F9A36 /* Roboto-LightItalic.ttf */; };
+		19D6B8EB27FE34EF006F9A36 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19D6B8DE27FE34EE006F9A36 /* Roboto-Medium.ttf */; };
+		19D6B8EC27FE34EF006F9A36 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19D6B8DF27FE34EE006F9A36 /* Roboto-Light.ttf */; };
+		19D6B8ED27FE34EF006F9A36 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19D6B8E027FE34EE006F9A36 /* Roboto-Bold.ttf */; };
+		19D6B8EE27FE34EF006F9A36 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 19D6B8E127FE34EE006F9A36 /* LICENSE.txt */; };
+		19D6B8EF27FE34EF006F9A36 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19D6B8E227FE34EE006F9A36 /* Roboto-MediumItalic.ttf */; };
+		19D6B8F027FE34EF006F9A36 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19D6B8E327FE34EF006F9A36 /* Roboto-Regular.ttf */; };
+		19D6B8F127FE34EF006F9A36 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19D6B8E427FE34EF006F9A36 /* Roboto-Thin.ttf */; };
+		19D6B8F227FE34EF006F9A36 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19D6B8E527FE34EF006F9A36 /* Roboto-ThinItalic.ttf */; };
+		19D6B8F327FE34EF006F9A36 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19D6B8E627FE34EF006F9A36 /* Roboto-Italic.ttf */; };
+		19D6B8F627FE37E6006F9A36 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D6B8F527FE37E6006F9A36 /* FontExtension.swift */; };
+		19D6B8FD27FE61E5006F9A36 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D6B8FB27FE61E5006F9A36 /* DetailsViewController.swift */; };
+		19D6B8FE27FE61E5006F9A36 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19D6B8FC27FE61E5006F9A36 /* DetailsViewController.xib */; };
+		19D6B90327FE658B006F9A36 /* DetailsSecondTeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D6B90127FE658B006F9A36 /* DetailsSecondTeamTableViewCell.swift */; };
+		19D6B90427FE658B006F9A36 /* DetailsSecondTeamTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19D6B90227FE658B006F9A36 /* DetailsSecondTeamTableViewCell.xib */; };
+		19D6B90727FE659F006F9A36 /* DetailsFirstTeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D6B90527FE659F006F9A36 /* DetailsFirstTeamTableViewCell.swift */; };
+		19D6B90827FE659F006F9A36 /* DetailsFirstTeamTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19D6B90627FE659F006F9A36 /* DetailsFirstTeamTableViewCell.xib */; };
+		19D6B90A27FE6A36006F9A36 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D6B90927FE6A36006F9A36 /* DetailsViewModel.swift */; };
+		19D6B90C27FE6A9E006F9A36 /* TeamsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D6B90B27FE6A9D006F9A36 /* TeamsModel.swift */; };
+		19D6B90E27FE6AB4006F9A36 /* PlayersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D6B90D27FE6AB4006F9A36 /* PlayersModel.swift */; };
+		19F47BF727FBBDB00036E267 /* LeagueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F47BF627FBBDB00036E267 /* LeagueModel.swift */; };
+		478AFBE09336506ABEFBCF5A /* Pods_MyCSTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F8BF75FF8894FDC5EEADA8E /* Pods_MyCSTV.framework */; };
+		6ABCE8BEAA2902887275DF40 /* Pods_MyCSTV_MyCSTVUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CA6DAF45D08FCAB3B078161 /* Pods_MyCSTV_MyCSTVUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		19902A8327EE9941006DAA74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19902A6427EE9941006DAA74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19902A6B27EE9941006DAA74;
+			remoteInfo = MyCSTV;
+		};
+		19902A8D27EE9941006DAA74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19902A6427EE9941006DAA74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19902A6B27EE9941006DAA74;
+			remoteInfo = MyCSTV;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		19118B0C27F4F19D003EC325 /* OpponentClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpponentClass.swift; sourceTree = "<group>"; };
+		195DC11627FCFFAA005DD2EE /* DeatailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeatailCoordinator.swift; sourceTree = "<group>"; };
+		19902A6C27EE9941006DAA74 /* MyCSTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCSTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		19902A6F27EE9941006DAA74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		19902A7127EE9941006DAA74 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		19902A7827EE9941006DAA74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		19902A7B27EE9941006DAA74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		19902A7D27EE9941006DAA74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19902A8227EE9941006DAA74 /* MyCSTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCSTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		19902A8627EE9941006DAA74 /* MyCSTVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCSTVTests.swift; sourceTree = "<group>"; };
+		19902A8C27EE9941006DAA74 /* MyCSTVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCSTVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		19902A9027EE9941006DAA74 /* MyCSTVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCSTVUITests.swift; sourceTree = "<group>"; };
+		19902A9227EE9941006DAA74 /* MyCSTVUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCSTVUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		19C4928527F2927C0068C950 /* MatchesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesTableViewCell.swift; sourceTree = "<group>"; };
+		19C4928627F2927C0068C950 /* MatchesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchesTableViewCell.xib; sourceTree = "<group>"; };
+		19C4928927F37DDF0068C950 /* MatchesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesModel.swift; sourceTree = "<group>"; };
+		19C4928D27F386B70068C950 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		19C4928F27F39B500068C950 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		19C4929027F39B510068C950 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		19C4929327F403870068C950 /* MatchesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesCoordinator.swift; sourceTree = "<group>"; };
+		19C4929527F406990068C950 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		19C492A627F412EC0068C950 /* MatchesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesViewModel.swift; sourceTree = "<group>"; };
+		19C492B227F4DAC00068C950 /* OpponentsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpponentsModel.swift; sourceTree = "<group>"; };
+		19CAC42D27FFE89200BFE5E5 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		19CAC42F27FFFC4400BFE5E5 /* DTOMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTOMapper.swift; sourceTree = "<group>"; };
+		19CAEC3A27F63B2D001ED5B7 /* MathcsAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathcsAPI.swift; sourceTree = "<group>"; };
+		19D6B8DA27FE34EE006F9A36 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		19D6B8DB27FE34EE006F9A36 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		19D6B8DC27FE34EE006F9A36 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		19D6B8DD27FE34EE006F9A36 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		19D6B8DE27FE34EE006F9A36 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		19D6B8DF27FE34EE006F9A36 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		19D6B8E027FE34EE006F9A36 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		19D6B8E127FE34EE006F9A36 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		19D6B8E227FE34EE006F9A36 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		19D6B8E327FE34EF006F9A36 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		19D6B8E427FE34EF006F9A36 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		19D6B8E527FE34EF006F9A36 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		19D6B8E627FE34EF006F9A36 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		19D6B8F527FE37E6006F9A36 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
+		19D6B8FB27FE61E5006F9A36 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		19D6B8FC27FE61E5006F9A36 /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
+		19D6B90127FE658B006F9A36 /* DetailsSecondTeamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsSecondTeamTableViewCell.swift; sourceTree = "<group>"; };
+		19D6B90227FE658B006F9A36 /* DetailsSecondTeamTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsSecondTeamTableViewCell.xib; sourceTree = "<group>"; };
+		19D6B90527FE659F006F9A36 /* DetailsFirstTeamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsFirstTeamTableViewCell.swift; sourceTree = "<group>"; };
+		19D6B90627FE659F006F9A36 /* DetailsFirstTeamTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsFirstTeamTableViewCell.xib; sourceTree = "<group>"; };
+		19D6B90927FE6A36006F9A36 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
+		19D6B90B27FE6A9D006F9A36 /* TeamsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsModel.swift; sourceTree = "<group>"; };
+		19D6B90D27FE6AB4006F9A36 /* PlayersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersModel.swift; sourceTree = "<group>"; };
+		19F47BF627FBBDB00036E267 /* LeagueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueModel.swift; sourceTree = "<group>"; };
+		1F8BF75FF8894FDC5EEADA8E /* Pods_MyCSTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCSTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5563F103157A649FEB8B99BC /* Pods-MyCSTVTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCSTVTests.debug.xcconfig"; path = "Target Support Files/Pods-MyCSTVTests/Pods-MyCSTVTests.debug.xcconfig"; sourceTree = "<group>"; };
+		66E2BFD8FA12F59E489E6517 /* Pods_MyCSTVTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCSTVTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CA6DAF45D08FCAB3B078161 /* Pods_MyCSTV_MyCSTVUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCSTV_MyCSTVUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		729228A47B92D10AB69685F5 /* Pods-MyCSTV-MyCSTVUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCSTV-MyCSTVUITests.debug.xcconfig"; path = "Target Support Files/Pods-MyCSTV-MyCSTVUITests/Pods-MyCSTV-MyCSTVUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A899E65BE90F62D3228FECDF /* Pods-MyCSTVTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCSTVTests.release.xcconfig"; path = "Target Support Files/Pods-MyCSTVTests/Pods-MyCSTVTests.release.xcconfig"; sourceTree = "<group>"; };
+		C3DA263E890D3394E6E4062E /* Pods-MyCSTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCSTV.release.xcconfig"; path = "Target Support Files/Pods-MyCSTV/Pods-MyCSTV.release.xcconfig"; sourceTree = "<group>"; };
+		D88F5ADADC6A9A0570F8FD2E /* Pods-MyCSTV-MyCSTVUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCSTV-MyCSTVUITests.release.xcconfig"; path = "Target Support Files/Pods-MyCSTV-MyCSTVUITests/Pods-MyCSTV-MyCSTVUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D8E5D6605E68370121A2BA99 /* Pods-MyCSTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCSTV.debug.xcconfig"; path = "Target Support Files/Pods-MyCSTV/Pods-MyCSTV.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19902A6927EE9941006DAA74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				478AFBE09336506ABEFBCF5A /* Pods_MyCSTV.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19902A7F27EE9941006DAA74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01B1A20EE78DD176C49637F9 /* Pods_MyCSTVTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19902A8927EE9941006DAA74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ABCE8BEAA2902887275DF40 /* Pods_MyCSTV_MyCSTVUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0180D4318180CE9B97A56D07 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D8E5D6605E68370121A2BA99 /* Pods-MyCSTV.debug.xcconfig */,
+				C3DA263E890D3394E6E4062E /* Pods-MyCSTV.release.xcconfig */,
+				729228A47B92D10AB69685F5 /* Pods-MyCSTV-MyCSTVUITests.debug.xcconfig */,
+				D88F5ADADC6A9A0570F8FD2E /* Pods-MyCSTV-MyCSTVUITests.release.xcconfig */,
+				5563F103157A649FEB8B99BC /* Pods-MyCSTVTests.debug.xcconfig */,
+				A899E65BE90F62D3228FECDF /* Pods-MyCSTVTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		195DC10C27FCEE68005DD2EE /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				195DC11627FCFFAA005DD2EE /* DeatailCoordinator.swift */,
+				195DC11527FCFF84005DD2EE /* View */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		195DC11527FCFF84005DD2EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				19D6B8FF27FE6540006F9A36 /* FirstTeam */,
+				19D6B90027FE6559006F9A36 /* SecondTeam */,
+				19D6B8FB27FE61E5006F9A36 /* DetailsViewController.swift */,
+				19D6B8FC27FE61E5006F9A36 /* DetailsViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		19902A6327EE9941006DAA74 = {
+			isa = PBXGroup;
+			children = (
+				19902A6E27EE9941006DAA74 /* MyCSTV */,
+				19902A8527EE9941006DAA74 /* MyCSTVTests */,
+				19902A8F27EE9941006DAA74 /* MyCSTVUITests */,
+				19902A6D27EE9941006DAA74 /* Products */,
+				0180D4318180CE9B97A56D07 /* Pods */,
+				C8AFB47295ADB05B07271829 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		19902A6D27EE9941006DAA74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19902A6C27EE9941006DAA74 /* MyCSTV.app */,
+				19902A8227EE9941006DAA74 /* MyCSTVTests.xctest */,
+				19902A8C27EE9941006DAA74 /* MyCSTVUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19902A6E27EE9941006DAA74 /* MyCSTV */ = {
+			isa = PBXGroup;
+			children = (
+				19902A9F27EFA069006DAA74 /* Application */,
+				19C4929827F409110068C950 /* Scene */,
+				19C4928B27F37DEE0068C950 /* ViewModel */,
+				19C4928C27F37E0C0068C950 /* Model */,
+				19CAEC3C27F63B36001ED5B7 /* API */,
+				19C4929727F406A20068C950 /* Common */,
+				19D6B8F427FE37A9006F9A36 /* Extension */,
+				19902A7D27EE9941006DAA74 /* Info.plist */,
+				19902A7827EE9941006DAA74 /* Assets.xcassets */,
+				19902A7A27EE9941006DAA74 /* LaunchScreen.storyboard */,
+			);
+			path = MyCSTV;
+			sourceTree = "<group>";
+		};
+		19902A8527EE9941006DAA74 /* MyCSTVTests */ = {
+			isa = PBXGroup;
+			children = (
+				19902A8627EE9941006DAA74 /* MyCSTVTests.swift */,
+			);
+			path = MyCSTVTests;
+			sourceTree = "<group>";
+		};
+		19902A8F27EE9941006DAA74 /* MyCSTVUITests */ = {
+			isa = PBXGroup;
+			children = (
+				19902A9027EE9941006DAA74 /* MyCSTVUITests.swift */,
+				19902A9227EE9941006DAA74 /* MyCSTVUITestsLaunchTests.swift */,
+			);
+			path = MyCSTVUITests;
+			sourceTree = "<group>";
+		};
+		19902A9F27EFA069006DAA74 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				19902A6F27EE9941006DAA74 /* AppDelegate.swift */,
+				19902A7127EE9941006DAA74 /* SceneDelegate.swift */,
+				19C4928D27F386B70068C950 /* AppCoordinator.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		19902AA427EFA717006DAA74 /* Matchs */ = {
+			isa = PBXGroup;
+			children = (
+				19C4929327F403870068C950 /* MatchesCoordinator.swift */,
+				19C4929927F409620068C950 /* View */,
+			);
+			path = Matchs;
+			sourceTree = "<group>";
+		};
+		19C4928B27F37DEE0068C950 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				19C492A627F412EC0068C950 /* MatchesViewModel.swift */,
+				19D6B90927FE6A36006F9A36 /* DetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		19C4928C27F37E0C0068C950 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				19C4928927F37DDF0068C950 /* MatchesModel.swift */,
+				19F47BF627FBBDB00036E267 /* LeagueModel.swift */,
+				19C492B227F4DAC00068C950 /* OpponentsModel.swift */,
+				19118B0C27F4F19D003EC325 /* OpponentClass.swift */,
+				19D6B90B27FE6A9D006F9A36 /* TeamsModel.swift */,
+				19D6B90D27FE6AB4006F9A36 /* PlayersModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		19C4929727F406A20068C950 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				19C4929527F406990068C950 /* Coordinator.swift */,
+				19D6B8D927FE34CC006F9A36 /* Fonts */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		19C4929827F409110068C950 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				19902AA427EFA717006DAA74 /* Matchs */,
+				195DC10C27FCEE68005DD2EE /* Details */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		19C4929927F409620068C950 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				19C4928527F2927C0068C950 /* MatchesTableViewCell.swift */,
+				19C4928627F2927C0068C950 /* MatchesTableViewCell.xib */,
+				19C4928F27F39B500068C950 /* ViewController.swift */,
+				19C4929027F39B510068C950 /* ViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		19CAEC3C27F63B36001ED5B7 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				19CAEC3A27F63B2D001ED5B7 /* MathcsAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		19D6B8D927FE34CC006F9A36 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				19D6B8E127FE34EE006F9A36 /* LICENSE.txt */,
+				19D6B8DA27FE34EE006F9A36 /* Roboto-Black.ttf */,
+				19D6B8DB27FE34EE006F9A36 /* Roboto-BlackItalic.ttf */,
+				19D6B8E027FE34EE006F9A36 /* Roboto-Bold.ttf */,
+				19D6B8DC27FE34EE006F9A36 /* Roboto-BoldItalic.ttf */,
+				19D6B8E627FE34EF006F9A36 /* Roboto-Italic.ttf */,
+				19D6B8DF27FE34EE006F9A36 /* Roboto-Light.ttf */,
+				19D6B8DD27FE34EE006F9A36 /* Roboto-LightItalic.ttf */,
+				19D6B8DE27FE34EE006F9A36 /* Roboto-Medium.ttf */,
+				19D6B8E227FE34EE006F9A36 /* Roboto-MediumItalic.ttf */,
+				19D6B8E327FE34EF006F9A36 /* Roboto-Regular.ttf */,
+				19D6B8E427FE34EF006F9A36 /* Roboto-Thin.ttf */,
+				19D6B8E527FE34EF006F9A36 /* Roboto-ThinItalic.ttf */,
+				19CAC42D27FFE89200BFE5E5 /* AppColor.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		19D6B8F427FE37A9006F9A36 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				19D6B8F527FE37E6006F9A36 /* FontExtension.swift */,
+				19CAC42F27FFFC4400BFE5E5 /* DTOMapper.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		19D6B8FF27FE6540006F9A36 /* FirstTeam */ = {
+			isa = PBXGroup;
+			children = (
+				19D6B90527FE659F006F9A36 /* DetailsFirstTeamTableViewCell.swift */,
+				19D6B90627FE659F006F9A36 /* DetailsFirstTeamTableViewCell.xib */,
+			);
+			path = FirstTeam;
+			sourceTree = "<group>";
+		};
+		19D6B90027FE6559006F9A36 /* SecondTeam */ = {
+			isa = PBXGroup;
+			children = (
+				19D6B90127FE658B006F9A36 /* DetailsSecondTeamTableViewCell.swift */,
+				19D6B90227FE658B006F9A36 /* DetailsSecondTeamTableViewCell.xib */,
+			);
+			path = SecondTeam;
+			sourceTree = "<group>";
+		};
+		C8AFB47295ADB05B07271829 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F8BF75FF8894FDC5EEADA8E /* Pods_MyCSTV.framework */,
+				6CA6DAF45D08FCAB3B078161 /* Pods_MyCSTV_MyCSTVUITests.framework */,
+				66E2BFD8FA12F59E489E6517 /* Pods_MyCSTVTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		19902A6B27EE9941006DAA74 /* MyCSTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19902A9627EE9941006DAA74 /* Build configuration list for PBXNativeTarget "MyCSTV" */;
+			buildPhases = (
+				C62DB18CC92FFB16BAAFE808 /* [CP] Check Pods Manifest.lock */,
+				19902A6827EE9941006DAA74 /* Sources */,
+				19902A6927EE9941006DAA74 /* Frameworks */,
+				19902A6A27EE9941006DAA74 /* Resources */,
+				74B0E75FE21EE9AC0DF79F6B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyCSTV;
+			productName = MyCSTV;
+			productReference = 19902A6C27EE9941006DAA74 /* MyCSTV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		19902A8127EE9941006DAA74 /* MyCSTVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19902A9927EE9941006DAA74 /* Build configuration list for PBXNativeTarget "MyCSTVTests" */;
+			buildPhases = (
+				BCC10F03B36267D56C2C6A22 /* [CP] Check Pods Manifest.lock */,
+				19902A7E27EE9941006DAA74 /* Sources */,
+				19902A7F27EE9941006DAA74 /* Frameworks */,
+				19902A8027EE9941006DAA74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19902A8427EE9941006DAA74 /* PBXTargetDependency */,
+			);
+			name = MyCSTVTests;
+			productName = MyCSTVTests;
+			productReference = 19902A8227EE9941006DAA74 /* MyCSTVTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		19902A8B27EE9941006DAA74 /* MyCSTVUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19902A9C27EE9941006DAA74 /* Build configuration list for PBXNativeTarget "MyCSTVUITests" */;
+			buildPhases = (
+				56E7BE86ECE9D85A5E1CCCF7 /* [CP] Check Pods Manifest.lock */,
+				19902A8827EE9941006DAA74 /* Sources */,
+				19902A8927EE9941006DAA74 /* Frameworks */,
+				19902A8A27EE9941006DAA74 /* Resources */,
+				6B7CD0D32EA6E60BD440D18D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19902A8E27EE9941006DAA74 /* PBXTargetDependency */,
+			);
+			name = MyCSTVUITests;
+			productName = MyCSTVUITests;
+			productReference = 19902A8C27EE9941006DAA74 /* MyCSTVUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19902A6427EE9941006DAA74 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					19902A6B27EE9941006DAA74 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					19902A8127EE9941006DAA74 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 19902A6B27EE9941006DAA74;
+					};
+					19902A8B27EE9941006DAA74 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 19902A6B27EE9941006DAA74;
+					};
+				};
+			};
+			buildConfigurationList = 19902A6727EE9941006DAA74 /* Build configuration list for PBXProject "MyCSTV" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 19902A6327EE9941006DAA74;
+			productRefGroup = 19902A6D27EE9941006DAA74 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19902A6B27EE9941006DAA74 /* MyCSTV */,
+				19902A8127EE9941006DAA74 /* MyCSTVTests */,
+				19902A8B27EE9941006DAA74 /* MyCSTVUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19902A6A27EE9941006DAA74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19D6B8E927FE34EF006F9A36 /* Roboto-BoldItalic.ttf in Resources */,
+				19D6B8EF27FE34EF006F9A36 /* Roboto-MediumItalic.ttf in Resources */,
+				19D6B8F127FE34EF006F9A36 /* Roboto-Thin.ttf in Resources */,
+				19D6B8F027FE34EF006F9A36 /* Roboto-Regular.ttf in Resources */,
+				19D6B8ED27FE34EF006F9A36 /* Roboto-Bold.ttf in Resources */,
+				19902A7C27EE9941006DAA74 /* LaunchScreen.storyboard in Resources */,
+				19D6B8F227FE34EF006F9A36 /* Roboto-ThinItalic.ttf in Resources */,
+				19D6B8EC27FE34EF006F9A36 /* Roboto-Light.ttf in Resources */,
+				19D6B8F327FE34EF006F9A36 /* Roboto-Italic.ttf in Resources */,
+				19D6B90427FE658B006F9A36 /* DetailsSecondTeamTableViewCell.xib in Resources */,
+				19D6B8EA27FE34EF006F9A36 /* Roboto-LightItalic.ttf in Resources */,
+				19D6B90827FE659F006F9A36 /* DetailsFirstTeamTableViewCell.xib in Resources */,
+				19D6B8FE27FE61E5006F9A36 /* DetailsViewController.xib in Resources */,
+				19902A7927EE9941006DAA74 /* Assets.xcassets in Resources */,
+				19D6B8EE27FE34EF006F9A36 /* LICENSE.txt in Resources */,
+				19C4929227F39B510068C950 /* ViewController.xib in Resources */,
+				19D6B8E727FE34EF006F9A36 /* Roboto-Black.ttf in Resources */,
+				19D6B8EB27FE34EF006F9A36 /* Roboto-Medium.ttf in Resources */,
+				19C4928827F2927C0068C950 /* MatchesTableViewCell.xib in Resources */,
+				19D6B8E827FE34EF006F9A36 /* Roboto-BlackItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19902A8027EE9941006DAA74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19902A8A27EE9941006DAA74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		56E7BE86ECE9D85A5E1CCCF7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyCSTV-MyCSTVUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B7CD0D32EA6E60BD440D18D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyCSTV-MyCSTVUITests/Pods-MyCSTV-MyCSTVUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyCSTV-MyCSTVUITests/Pods-MyCSTV-MyCSTVUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyCSTV-MyCSTVUITests/Pods-MyCSTV-MyCSTVUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74B0E75FE21EE9AC0DF79F6B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyCSTV/Pods-MyCSTV-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyCSTV/Pods-MyCSTV-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyCSTV/Pods-MyCSTV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCC10F03B36267D56C2C6A22 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyCSTVTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C62DB18CC92FFB16BAAFE808 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyCSTV-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19902A6827EE9941006DAA74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19D6B90327FE658B006F9A36 /* DetailsSecondTeamTableViewCell.swift in Sources */,
+				19D6B90A27FE6A36006F9A36 /* DetailsViewModel.swift in Sources */,
+				19C492A727F412EC0068C950 /* MatchesViewModel.swift in Sources */,
+				19C4928727F2927C0068C950 /* MatchesTableViewCell.swift in Sources */,
+				19C4928A27F37DDF0068C950 /* MatchesModel.swift in Sources */,
+				19118B0D27F4F19D003EC325 /* OpponentClass.swift in Sources */,
+				19D6B90C27FE6A9E006F9A36 /* TeamsModel.swift in Sources */,
+				19902A7027EE9941006DAA74 /* AppDelegate.swift in Sources */,
+				19C4929427F403870068C950 /* MatchesCoordinator.swift in Sources */,
+				19CAC42E27FFE89200BFE5E5 /* AppColor.swift in Sources */,
+				195DC11727FCFFAA005DD2EE /* DeatailCoordinator.swift in Sources */,
+				19C4929127F39B510068C950 /* ViewController.swift in Sources */,
+				19D6B90727FE659F006F9A36 /* DetailsFirstTeamTableViewCell.swift in Sources */,
+				19D6B90E27FE6AB4006F9A36 /* PlayersModel.swift in Sources */,
+				19D6B8FD27FE61E5006F9A36 /* DetailsViewController.swift in Sources */,
+				19CAC43027FFFC4400BFE5E5 /* DTOMapper.swift in Sources */,
+				19F47BF727FBBDB00036E267 /* LeagueModel.swift in Sources */,
+				19CAEC3B27F63B2D001ED5B7 /* MathcsAPI.swift in Sources */,
+				19902A7227EE9941006DAA74 /* SceneDelegate.swift in Sources */,
+				19D6B8F627FE37E6006F9A36 /* FontExtension.swift in Sources */,
+				19C4928E27F386B70068C950 /* AppCoordinator.swift in Sources */,
+				19C492B327F4DAC00068C950 /* OpponentsModel.swift in Sources */,
+				19C4929627F406990068C950 /* Coordinator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19902A7E27EE9941006DAA74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19902A8727EE9941006DAA74 /* MyCSTVTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19902A8827EE9941006DAA74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19902A9327EE9941006DAA74 /* MyCSTVUITestsLaunchTests.swift in Sources */,
+				19902A9127EE9941006DAA74 /* MyCSTVUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19902A8427EE9941006DAA74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19902A6B27EE9941006DAA74 /* MyCSTV */;
+			targetProxy = 19902A8327EE9941006DAA74 /* PBXContainerItemProxy */;
+		};
+		19902A8E27EE9941006DAA74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19902A6B27EE9941006DAA74 /* MyCSTV */;
+			targetProxy = 19902A8D27EE9941006DAA74 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		19902A7A27EE9941006DAA74 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19902A7B27EE9941006DAA74 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		19902A9427EE9941006DAA74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		19902A9527EE9941006DAA74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		19902A9727EE9941006DAA74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8E5D6605E68370121A2BA99 /* Pods-MyCSTV.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F89P772479;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyCSTV/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Abner.MyCSTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		19902A9827EE9941006DAA74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3DA263E890D3394E6E4062E /* Pods-MyCSTV.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F89P772479;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyCSTV/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Abner.MyCSTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		19902A9A27EE9941006DAA74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5563F103157A649FEB8B99BC /* Pods-MyCSTVTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F89P772479;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Abner.MyCSTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyCSTV.app/MyCSTV";
+			};
+			name = Debug;
+		};
+		19902A9B27EE9941006DAA74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A899E65BE90F62D3228FECDF /* Pods-MyCSTVTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F89P772479;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Abner.MyCSTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyCSTV.app/MyCSTV";
+			};
+			name = Release;
+		};
+		19902A9D27EE9941006DAA74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 729228A47B92D10AB69685F5 /* Pods-MyCSTV-MyCSTVUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F89P772479;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Abner.MyCSTVUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyCSTV;
+			};
+			name = Debug;
+		};
+		19902A9E27EE9941006DAA74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D88F5ADADC6A9A0570F8FD2E /* Pods-MyCSTV-MyCSTVUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F89P772479;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Abner.MyCSTVUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyCSTV;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19902A6727EE9941006DAA74 /* Build configuration list for PBXProject "MyCSTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19902A9427EE9941006DAA74 /* Debug */,
+				19902A9527EE9941006DAA74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19902A9627EE9941006DAA74 /* Build configuration list for PBXNativeTarget "MyCSTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19902A9727EE9941006DAA74 /* Debug */,
+				19902A9827EE9941006DAA74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19902A9927EE9941006DAA74 /* Build configuration list for PBXNativeTarget "MyCSTVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19902A9A27EE9941006DAA74 /* Debug */,
+				19902A9B27EE9941006DAA74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19902A9C27EE9941006DAA74 /* Build configuration list for PBXNativeTarget "MyCSTVUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19902A9D27EE9941006DAA74 /* Debug */,
+				19902A9E27EE9941006DAA74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 19902A6427EE9941006DAA74 /* Project object */;
+}
