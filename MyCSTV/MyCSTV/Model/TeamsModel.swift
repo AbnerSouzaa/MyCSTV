@@ -12,4 +12,9 @@ struct Teams: Codable {
     let name: String
     let imageUrl: URL?
     let players: [Players]
+    
+    private enum CodingKeys: String, CodingKey {
+        case players, id, name
+        case imageUrl = "image_url"
+    }
 }

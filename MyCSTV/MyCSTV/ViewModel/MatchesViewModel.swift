@@ -14,7 +14,7 @@ class MatchesViewModel {
     typealias returnMatches = (_ matches:[Matches]?, _ status: Bool, _ message: String) -> Void
     var matchesReturn: returnMatches?
     let headers: HTTPHeaders = [.authorization(bearerToken: "FMDqSx0lHB-jRG9qzXohK6N6jAh4awlWR_BdkhV9202HNZgjwKg")]
-
+    
     
     init(baseUrL: String) {
         self.baseUrL = baseUrL
@@ -29,7 +29,13 @@ class MatchesViewModel {
             
             do {
                 let matches = try JSONDecoder().decode( [Matches].self, from: data)
-//                print("name : \(matches)")
+                //tentativa de passar matches.date para Data
+                for matches in matches{
+                    let formatter = DateFormatter()
+                    let stringDate = matches.date
+                    formatter.dateFormat = "yyyy-MM-ddd'T'HH:mm:ssZ"
+                    let date = formatter.date(from: stringDate)
+                }
                 self.matchesReturn?(matches, true, "")
                 
 

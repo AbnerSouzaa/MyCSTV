@@ -13,11 +13,8 @@ struct League: Codable {
     let name: String?
     let slug: String?
 
-    
-    
     enum CodingKeys: String, CodingKey {
         case imageUrl = "image_url"
         case name, slug
-        
     }
 }

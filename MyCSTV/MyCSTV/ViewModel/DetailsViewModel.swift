@@ -26,9 +26,8 @@ class DetailsViewModel {
             guard let data = responseData.data else {
                 self.teamsReturn?(nil, false, "")
                 return }
-            
             do {
-                let teams = try JSONDecoder().decode( [Teams].self, from: data)
+                let teams = try JSONDecoder().decode([Teams].self, from: data)
                 print("teams : \(teams)")
                 self.teamsReturn?(teams, true, "")
         

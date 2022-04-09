@@ -29,22 +29,6 @@ class MatchesTableViewCell: UITableViewCell {
         self.setupElements()
     }
     
-    override func prepareForReuse() {
-//        super.prepareForReuse()
-//        self.labelTime1.text?.removeAll()
-//        self.labelTime2.text?.removeAll()
-//        self.imageTime1.image = nil
-//        self.imageTime2.image = nil
-//        self.leagueImage.image = nil
-//        self.league.text?.removeAll()
-    }
-    
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    
     func setupElements(){
         
         self.vsLabel.font = .roboto(type: .regular, size: 10)
@@ -54,22 +38,11 @@ class MatchesTableViewCell: UITableViewCell {
         self.data.font = .roboto(type: .bold, size: 10)
         
         self.dataView.layer.masksToBounds = true
+        self.dataView.layer.cornerRadius = 14
+        self.containerView.layer.cornerRadius = 14
         self.dataView.layer.maskedCorners = [.layerMinXMaxYCorner,.layerMaxXMinYCorner]
-        self.dataView.layer.cornerRadius = 12
-        self.containerView.layer.cornerRadius = 12
+        
     }
-    
-//    func setupDateFormatter(matches: Matches) {
-//        let formatter = DateFormatter()
-//        let stringDate = matches.date
-//        formatter.dateFormat = "HH:mm"
-//        formatter.timeZone = .autoupdatingCurrent
-//        formatter.locale = .autoupdatingCurrent
-//
-//
-//
-//
-//    }
     
     func setupMatches(matches: Matches){
         
@@ -80,16 +53,24 @@ class MatchesTableViewCell: UITableViewCell {
             
             if let imageUrl = opponents1.imageURL {
             self.imageTime1.kf.setImage(with:imageUrl)
+            } else {
+                self.imageTime1.image = UIImage(named: "imagenil")
             }
             if let imageUrl = opponenst2.imageURL {
-                self.imageTime2.kf.setImage(with:imageUrl)
+                   self.imageTime2.kf.setImage(with:imageUrl)
+            } else{
+                self.imageTime2.image = UIImage(named: "imagenil")
             }
+
             if let imageUrl = matches.league?.imageUrl {
                 self.leagueImage.kf.setImage(with: imageUrl)
+            }  else {
+                self.leagueImage.image = UIImage(named: "imagenil")
             }
+            
+        
             self.labelTime1.text = opponents1.name
             self.labelTime2.text = opponenst2.name
-
         }
         
         if matches.status == "running" {
@@ -97,16 +78,7 @@ class MatchesTableViewCell: UITableViewCell {
             self.dataView.layer.borderColor = AppColor.lightGrey.color.cgColor
         }
         
-//        self.data.text = matches.date
         self.league.text = matches.league?.name
-        
         self.data.text = matches.date
-        
-        
- 
-//        let dateString = formatter.string(from: stringDate)
-//        self.data.text = matches.date
     }
-
-
 }

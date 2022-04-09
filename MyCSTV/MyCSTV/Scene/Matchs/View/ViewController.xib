@@ -20,7 +20,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Partidas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCc-uO-8hZ">
-                    <rect key="frame" x="20" y="64" width="101" height="33"/>
+                    <rect key="frame" x="24" y="64" width="101" height="33"/>
                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="27"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
@@ -34,19 +34,22 @@
                         <outlet property="delegate" destination="-1" id="qnr-p5-rIT"/>
                     </connections>
                 </tableView>
-                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="fv9-Hc-Var">
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="fv9-Hc-Var">
                     <rect key="frame" x="197" y="438" width="20" height="20"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.086274509799999996" green="0.086274509799999996" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="qCc-uO-8hZ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="8Vf-bd-L8P"/>
                 <constraint firstAttribute="bottom" secondItem="zN6-DZ-VkT" secondAttribute="bottom" id="AVz-sX-545"/>
-                <constraint firstItem="qCc-uO-8hZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" id="cBt-xg-vdX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="fv9-Hc-Var" secondAttribute="bottom" constant="404" id="WSJ-Pc-j6b"/>
+                <constraint firstItem="qCc-uO-8hZ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="ce4-yh-k5D"/>
+                <constraint firstItem="fv9-Hc-Var" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="197" id="l0c-0p-5Pp"/>
+                <constraint firstItem="fv9-Hc-Var" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="394" id="mHu-i0-f1j"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fv9-Hc-Var" secondAttribute="trailing" constant="197" id="nfP-HO-1zN"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zN6-DZ-VkT" secondAttribute="trailing" id="q7z-Pb-kvJ"/>
                 <constraint firstItem="zN6-DZ-VkT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="rkP-Vj-jVr"/>
+                <constraint firstItem="qCc-uO-8hZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="yQY-dY-YRb"/>
                 <constraint firstItem="zN6-DZ-VkT" firstAttribute="top" secondItem="qCc-uO-8hZ" secondAttribute="bottom" constant="10" id="zZQ-IC-mug"/>
             </constraints>
             <point key="canvasLocation" x="131.8840579710145" y="93.75"/>

@@ -17,12 +17,19 @@ class DetailsViewController: UIViewController, UITableViewDelegate, UITableViewD
     @IBOutlet weak var imageTeam2: UIImageView!
     @IBOutlet weak var imageTeam1: UIImageView!
     @IBOutlet weak var leagueLabel: UILabel!
-    
     @IBOutlet weak var backButton: UIButton!
     
+    var coordinator: MatchesCoordinator?
     var teams = [Teams]()
-    var detailFirstCell: Int = 0
-    var detailSecondCell: Int = 0
+    
+    init(coordinator: MatchesCoordinator){
+        super.init(nibName: nil, bundle: nil)
+        self.coordinator = coordinator
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,40 +43,29 @@ class DetailsViewController: UIViewController, UITableViewDelegate, UITableViewD
         let url = DetailsViewModel(baseUrL: "https://api.pandascore.co/csgo/matches")
         url.getTeams()
         
-        self.tableView1.register(UINib(nibName: "DetailsSecondTableViewCell", bundle: nil), forCellReuseIdentifier: "firstTeamCell")
+        self.tableView1.register(UINib(nibName: "DetailsSecondTableViewCell", bundle: nil), forCellReuseIdentifier: "SencondTeamCell")
         self.tableView1.delegate = self
         self.tableView2.dataSource = self
-        let secondUrl = DetailsViewModel(baseUrL: "https://api.pandascore.co/csgo/matches")
-        secondUrl.getTeams()
-        
-        
     }
 
+    @IBAction func goBack(_ sender: Any) {
+        self.coordinator?.goBack()
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if teams.count == 2 {
-            return 5
-        }
-            return 0
+        return teams.count
     }
-
+    
+    var detailFirstCell: Int = 0
+    var detailSecondCell: Int = 0
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if tableView == self.tableView1, let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as? DetailsFirstTeamTableViewCell {
-            if teams[0].players.count >= self.detailFirstCell + 1 {
-                cell.setupCell(team: teams[0], index: self.detailFirstCell)
-                self.detailFirstCell += 1
-            }
+        
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? DetailsFirstTeamTableViewCell {
 
-            return cell
-            
-        } else if let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as? DetailsSecondTeamTableViewCell {
-            if teams[0].players.count >= self.detailFirstCell + 1 {
-                cell.setupCell(team: teams[1], index: self.detailFirstCell)
-                self.detailFirstCell += 1
-            }
+            let teams = teams[indexPath.row]
 
             return cell
         }
         return UITableViewCell()
     }
-
 }

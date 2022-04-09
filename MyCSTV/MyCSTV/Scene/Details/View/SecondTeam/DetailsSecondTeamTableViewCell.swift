@@ -30,7 +30,7 @@ class DetailsSecondTeamTableViewCell: UITableViewCell {
         }
             self.nickName.text = team.players[index].nickname
             
-            if let imageUrl = team.players[index].imageUrl {
+        if let imageUrl = team.players[index].imageUrl {
                 self.playerImage.kf.setImage(with: imageUrl)
             }
         }

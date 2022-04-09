@@ -15,14 +15,10 @@ struct Matches: Codable {
     let league: League?
     let date: String
 
-    
-    
     enum CodingKeys: String, CodingKey {
         case opponents, status, league
         case date = "begin_at"
         case serieID = "serie_id"
-        
     }
-    
 }
 

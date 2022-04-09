@@ -6,13 +6,14 @@
 //
 
 import UIKit
+import Kingfisher
 
 class DetailsFirstTeamTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var nickName: UILabel!
     @IBOutlet weak var playerName: UILabel!
     @IBOutlet weak var playerImage: UIImageView!
+    @IBOutlet weak var containerView: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,14 +26,15 @@ class DetailsFirstTeamTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setupCell(team: Teams, index: Int) {
-        if let playerFirstName = team.players[index].firstName, let playerLastName = team.players[index].lastName {
+    func setupCell(index: Int, teams: Teams) {
+        
+        if let playerFirstName = teams.players[index].firstName, let playerLastName = teams.players[index].lastName {
             self.playerName.text = "\(playerFirstName) \(playerLastName)"
         }
-            self.nickName.text = team.players[index].nickname
+            self.nickName.text = teams.players[index].nickname
             
-            if let imageUrl = team.players[index].imageUrl {
-                self.playerImage.kf.setImage(with: imageUrl)
+        if let imageUrl = teams.players[index].imageUrl {
+            self.playerImage.kf.setImage(with: imageUrl)
             }
         }
 }

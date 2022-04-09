@@ -18,7 +18,7 @@ class MatchesCoordinator: NavigationCoordinator {
     }
     
     func start() {
-        let matchesViewController = ViewController()
+        let matchesViewController = ViewController(coordinator: self)
 //      let matchesViewController = DefaultMatchesViewModel(coordinator: self)
 //      matchesViewController.bind(to: MatchesViewModel)
         self.rootViewController.modalPresentationStyle = .fullScreen
@@ -26,11 +26,10 @@ class MatchesCoordinator: NavigationCoordinator {
     }
     
     func openDetails(matches: Matches) {
-//        self.freeAllChildCoordinators()
-        let detailViewController = DetailsViewController()
+        let detailViewController = DetailsViewController(coordinator: self)
         detailViewController.modalPresentationStyle = .fullScreen
+        self.rootViewController.isNavigationBarHidden = true
         self.rootViewController.pushViewController(detailViewController, animated: true)
-        
     }
     
     func goBack() {
